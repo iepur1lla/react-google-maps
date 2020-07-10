@@ -49,7 +49,7 @@ const MapWithAMarkerClusterer = compose(
 );
 
 class DemoApp extends React.PureComponent {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({ markers: [] })
   }
 
