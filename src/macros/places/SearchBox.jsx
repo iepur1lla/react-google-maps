@@ -71,7 +71,7 @@ export class SearchBox extends React.PureComponent {
     this.handleMountAtControlPosition()
   }
 
-  componentWillUpdate(nextProp) {
+  UNSAFE_componentWillUpdate(nextProp) {
     if (this.props.controlPosition !== nextProp.controlPosition) {
       this.handleUnmountAtControlPosition()
     }
